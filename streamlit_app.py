@@ -82,9 +82,9 @@ with st.sidebar:
             hf_token = st.text_input('Enter API Token:', type='password')
             if st.button('Login 🚀') and hf_email and hf_pass and hf_token: 
                 with st.spinner('🚀 Logging in...'):
-                    st.session_state['496toaster@gmail.com'] = hf_email
-                    st.session_state['=G9EnPA+sFe6^x@'] = hf_pass
-                    st.session_state['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'] = hf_token
+                    st.session_state['hf_email'] = hf_email
+                    st.session_state['hf_pass'] = hf_pass
+                    st.session_state['hf_token'] = hf_token
 
                     try:
                     
