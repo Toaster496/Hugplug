@@ -224,7 +224,7 @@ with st.sidebar:
         if st.session_state['plugin'] == "🧠 GOD MODE" and 'god_mode' not in st.session_state:
             with st.expander("🧠 GOD MODE Settings", expanded=True):
                 if 'god_mode' not in st.session_state or st.session_state['god_mode'] == False:
-                    topic = st.text_input('🔎 Topic', "Artificial Intelligence in Finance")
+                    topic = st.text_input('🔎 Topic', "What is ToastGPT?")
                     web_result = st.checkbox('🌐 Web Search', value=True, disabled=True)
                     yt_result = st.checkbox('🎥 YT Search', value=True, disabled=True)
                     website_result = st.checkbox('🔗 Website Search', value=True, disabled=True)
