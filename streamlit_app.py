@@ -71,7 +71,7 @@ st.markdown('<style>.css-w770g5{\
 
 # Sidebar contents for logIN, choose plugin, and export chat
 with st.sidebar:
-    st.title('🤗💬 PersonalChat App')
+    st.title('🤗💬 Product Description Masterpiece)
     
     if 'hf_email' not in st.session_state or 'hf_pass' not in st.session_state:
         with st.expander("ℹ️ Login in Hugging Face", expanded=True):
