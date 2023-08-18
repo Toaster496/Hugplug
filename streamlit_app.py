@@ -228,7 +228,7 @@ with st.sidebar:
                     web_result = st.checkbox('🌐 Web Search', value=True, disabled=True)
                     yt_result = st.checkbox('🎥 YT Search', value=True, disabled=True)
                     website_result = st.checkbox('🔗 Website Search', value=True, disabled=True)
-                    deep_of_search = st.slider('📊 Deep of Search', min_value=1, max_value=5, value=2, step=1) 
+                    deep_of_search = st.slider('📊 Deep of Search', min_value=1, max_value=10, value=2, step=1) 
                     if st.button('🧠✅ Give knowledge to the model'):
                         full_text = []
                         links = []
