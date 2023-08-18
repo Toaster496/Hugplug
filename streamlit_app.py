@@ -51,7 +51,7 @@ if 'hf_token' in st.session_state:
 
 
 st.set_page_config(
-    page_title="Talk with evrythings💬", page_icon="🤗", layout="wide", initial_sidebar_state="expanded"
+    page_title="Talk with ToastGPT💬", page_icon="✅", layout="wide", initial_sidebar_state="expanded"
 )
 
 st.markdown('<style>.css-w770g5{\
@@ -94,7 +94,7 @@ with st.sidebar:
                     except Exception as e:
                         st.error(e)
                         st.info("⚠️ Please check your credentials and try again.")
-                        st.error("⚠️ dont abuse the API")
+                        st.error("⚠️ dont abuse the ToastGPT")
                         st.warning("⚠️ If you don't have an account, you can register [here](https://huggingface.co/join).")
                         from time import sleep
                         sleep(3)
@@ -112,7 +112,7 @@ with st.sidebar:
                     # Generate empty lists for generated and past.
                     ## generated stores AI generated responses
                     if 'generated' not in st.session_state:
-                        st.session_state['generated'] = ["I'm **IA ITALIA chat**, How may I help you ? "]
+                        st.session_state['generated'] = ["I'm **ToastGPT**, How may I help you ? "]
                     ## past stores User's questions
                     if 'past' not in st.session_state:
                         st.session_state['past'] = ['Hi!']
@@ -726,10 +726,6 @@ with st.sidebar:
 
     export_chat()
     add_vertical_space(5)
-    html_chat = '<center><h6>🤗 Support the project with a donation for the development of new features 🤗</h6>'
-    html_chat += '<br><a href="https://rebrand.ly/SupportAUTOGPTfree"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal donate button" /></a><center><br>'
-    st.markdown(html_chat, unsafe_allow_html=True)
-    st.write('Made with ❤️ by [Alessandro CIciarelli](https://intelligenzaartificialeitalia.net)')
 
 ##### End of sidebar
 
